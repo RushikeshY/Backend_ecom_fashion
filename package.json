@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "��#\u0000 \u0000B\u0000a\u0000c\u0000k\u0000e\u0000n\u0000d\u0000_\u0000e\u0000c\u0000o\u0000m\u0000_\u0000f\u0000a\u0000s\u0000h\u0000i\u0000o\u0000n\u0000\r\u0000 \u0000",
   "main": "index.js",
-  "type":"module",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"nodemon index"
+    "start": "nodemon src/index"
   },
   "repository": {
     "type": "git",
@@ -21,11 +21,13 @@
   "homepage": "https://github.com/RushikeshY/Backend_ecom_fashion#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.7.1",
-    "nodemon": "^3.1.7"
+    "nodemon": "^3.1.7",
+    "validator": "^13.12.0"
   }
 }
