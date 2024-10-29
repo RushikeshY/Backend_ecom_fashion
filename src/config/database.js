@@ -3,7 +3,8 @@ require('colors')
 require('dotenv').config()
 mongoose.set('strictQuery', false) // for removing DeprecationWarning
 
-const db = process.env.DB_URL 
+
+const db = process.env.DB_URL
 
 // database connection
 const connectDB = async () => {

@@ -1,22 +1,13 @@
-import express from "express";
-import cors from "cors";
-import cookieParser  from "cookie-parser";
-import path from "path"
-import {connectDB} from "./config/database";
-const app = express();
+const express = require('express')
+const app = express()
+const cors = require('cors')
+// const cookieParser = require('cookie-parser')
 
-app.use(cors());
-app.use(express.json());
-app.use(cookieParser());
 
-app.get("/", (req, res) => {
-  res.send("Hello word");
-});
+// middleware
+app.use(express.json())
+app.use(cors())
+// app.use(cookieParser())
 
-const startServer = () => {
-  app.listen(5000, async () => {
-    console.log("server has started at port 5000");
-  });
-};
 
-startServer();
+module.exports = app
